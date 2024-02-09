@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Callout from '../components/Callout.svelte';
+import TitleListBlock from '../components/TitleListBlock.svelte';
+import Products from '../components/Products.svelte';
+import BizModel from '../components/BizModel.svelte';
+import Blog from '../components/Blog.svelte';
+import Contact from '../components/Contact.svelte';
+---
+
+<Layout title="AzureHill Holdings | Home">
+	<Callout 
+		hasH1={true}
+		image="/azurehillhero.png"
+		content={{
+			title: "Welcome to AzureHill Holdings LLC – ",
+			description: "your dedicated partner in the world of online wholesale and retail. At AzureHill Holdings, we specialize in providing quality products across diverse markets, ensuring value and excellence in every transaction."
+		}}
+	/>
+	<TitleListBlock
+		title="About Us"
+		items={[
+			'<b>Company Background:</b> AzureHill Holdings was founded with the vision of bridging the gap between quality suppliers and the dynamic online marketplace. Our journey is fueled by a passion for excellence and a commitment to customer satisfaction.',
+			'<b>Team Information:</b> Led by Bobby Nicholson, a visionary entrepreneur with extensive experience in e-commerce, software development, and online retail.',
+			'<b>Values and Philosophy:</b> We believe in integrity, quality, and sustainable business practices. Our approach is customer-centric, ensuring a win-win for both suppliers and customers.'
+		]}
+	/>
+	<Products
+	 title="Products/Services"
+	 items={[
+		{
+			title:'Overview:',
+			text: 'We offer a range of products catering to various segments of the online market, focusing on high-demand and niche items.'
+		},
+		{
+			title: 'Supplier Relationships: ',
+			text: 'Our partnerships with reputable suppliers ensure a steady supply of quality products.'
+		}, 
+		{
+			title: 'Quality Assurance:',
+			text: 'Each product is meticulously selected to meet our high standards of quality and marketability.'
+		}
+	 ]}
+	/>
+	<BizModel
+		title="Business Model"
+		image="/bizModel.png"
+		items={[
+			{
+				title: "Operations:",
+				text: 'Our business model is centered around a multi-channel retail strategy, maximizing product visibility and sales.'
+			},
+			{
+				title: 'Market Focus:',
+				text: 'Targeting a diverse customer base, our operations span across various online platforms and future plans for physical retail expansion.'
+			},
+			{
+				title: 'Advantages:',
+				text: 'Partnering with AzureHill Holdings means tapping into a vast online market with efficient distribution and marketing strategies.'
+			}
+		]}
+	/>
+	<Blog />
+	<Contact />
+</Layout>
+
+<style>
+
+</style>
